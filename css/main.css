@@ -606,5 +606,31 @@ section,
   background: rgba(198, 16, 0, 0);
   top: -15%;
   left: -15%;
+}
 
+.pulsating-play-btn{
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: ;
+  border-left: ;
+
+}
+
+.about .pulsating-play-btn {
+  position: absolute;
+  left: calc(50% - 47px);
+  top: calc(50% - 47px);
+}
+
+@keyframes pulsating-play-btn {
+
+  0% {
+    transform: scale(0.6, 0.6);
+    opacity: 1;
+  }
 }
