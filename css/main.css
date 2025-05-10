@@ -369,6 +369,46 @@ section,
   padding: 60px 0;
 }
 
+@media (max-widht: 1199px) {
+  section,
+  .section {
+    scroll-margin-top: 66px;
+  }
+}
+
+/* Global Title */
+.section-title {
+  text-align: center;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.section-title h2 {
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  padding: 8px 20px;
+  margin: 0;
+  background: #f3e0c8;
+  color: #060606;
+  display: inline-block;
+  text-transform: uppercase;
+  border-radius: 50px;
+  font-family: var(--font-padrao);
+}
+
+.section-title div {
+  color: #060606;
+  margin: 10px 0 0 0;
+  font-size: 29px;
+  font-weight: 700;
+  font-family: var(--font-titulo);
+}
+
+.section-title div .description-title {
+  color: #b56515;
+}
+
 .dark-background {
   --background-color: #060606;
   --default-color: #f1f0f0;
@@ -703,6 +743,7 @@ section,
 }
 
 /* Services */
+
 .services .service-item{
   position: relative;
   height: 100%;
@@ -713,9 +754,68 @@ section,
   margin-right: 20px;
 }
 
+/* colocar cor no icone */
 .services .service-item .icon i {
   color: var(--accent-color);
   font-size: 40px;
   line-height: 0;
   transition: 0.3s;
 }
+
+/* altera a cor do icone */
+.services .service-item:hover .icon i {
+  color: #c27d2f;
+  transition: all .2s ease-in;
+}
+
+/* nosso h4 */
+.services .service-item .title {
+color: #c27d2f;
+font-weight: 700;
+font-size: 20px;
+transition: all 0.3s;
+margin-bottom: 10px;
+}
+
+.services .service-item .description {
+  font-size: 15px;
+  color: #394047;
+  margin-bottom: 10px;
+}
+
+/* scroll-top = Botão de voltar ao topo do site */
+
+.scroll-top {
+  position: fixed;
+  background-color: #386dc2;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  z-index: 99999;
+  right: 15px;
+  bottom: 15px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+.scroll-top i {
+  font-size: 24px;
+  color: #fff;
+}
+
+.scroll-top:hover {
+  background-color: #6ba7dcd9;
+}
+
+.scroll-top i:hover {
+  color: #060606;
+  transition: all .2s ease-in-out;
+}
+
+.scroll-top.active {
+  visibility: visible;
+  opacity: 1;
+  line-height: 0;
+}
+
