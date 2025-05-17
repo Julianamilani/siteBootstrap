@@ -367,12 +367,13 @@ section,
   color: var(--default-color);
   background-color: var(--background-color);
   padding: 60px 0;
+  scroll-margin-top: 40px;
 }
 
 @media (max-widht: 1199px) {
   section,
   .section {
-    scroll-margin-top: 66px;
+    scroll-margin-top: 50px;
   }
 }
 
@@ -846,7 +847,7 @@ margin-left:  8px;
   font-weight: 600;
 }
 
-@media (max-widht 575px) {
+@media (max-width: 575px) {
   .portfolio .portfolio-filters li {
     font-size: 14px;
     margin: 0 5px;
