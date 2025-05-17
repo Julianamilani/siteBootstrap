@@ -42,7 +42,7 @@ Global Color */
   /* Cor padrão usada para a maioria do conteúdo de texto em todo o site */
   --heading-color: #394047;
   /* Cor para títulos, subtítulos e título em todo o site */
-  --accent-color: #428bca;
+  --accent-color: #c00a50;
   /* Cor de destaque que representa sua marca no site. É usada para botões, links e outros elementos que precisam se destacar */
   --surface-color: #ffffff;
   /* A cor de superfície é usada como fundo de elementos em caixa dentro das seções, como cards, caixas de ícones ou outros elementos que requerem uma separação visual do fundo global. */
@@ -54,7 +54,7 @@ Global Color */
 
 :root {
   --nav-color: #ffffff;
-  --nav-hover-color: #428bca;
+  --nav-hover-color: #e87b2e;
   --nav-mobile-background-color: #ffffff;
   --nav-dropdown-background-color: #ffffff;
   --nav-dropdown-color: #444444;
@@ -817,6 +817,53 @@ margin-left:  8px;
   object-fit: cover;
   z-index: 1;
 }
+
+/* escurece um pouco a transparencia da foto para receber texto */
+.call-to-action::before {
+  content: "";
+  background: #060606a7;
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+/* para o texto aparecer por cima da foto */
+.call-to-action .container {
+  position: relative;
+  z-index: 3;
+}
+
+.call-to-action h3 {
+  font-weight: 800;
+  text-shadow: 2px 1px 6px #0b0a0a;
+  font-size: 30px;
+}
+
+.call-to-action p {
+  font-size: 18px;
+  margin-top: 45px;
+  text-shadow: 2px 1px 6px #0b0a0a;
+}
+
+.call-to-action .cta-btn {
+  font-family: var(--font-titulo);
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 1px;
+  display: inline-block;
+  border: 2px solid #d89048b4;
+  color: #e3e0e0;
+  padding: 12px 40px;
+  border-radius: 5px;
+  transition: .1s;
+  margin: 10px;
+}
+
+.call-to-action .cta-btn:hover {
+  background: #10b441;
+  border: 2px solid;
+}
+
 
 
 
