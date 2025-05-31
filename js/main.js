@@ -213,9 +213,9 @@
 
 
 
-    // Envio do Formulário com Limpeza dos Campos
+    // Envio do Formulário com Limpeza dos Campos//
 
-const form = document.querySelector(".email-form");
+const form = document.querySelector(".email-form"); 
 
 form.addEventListener("submit", async function (event) {
     event.preventDefault(); //Impede a Atualização da Página.

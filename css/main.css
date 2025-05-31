@@ -1099,6 +1099,85 @@ margin-left:  8px;
 }
 
 
+/* # Contato // Forms */
+
+.contact .info-item {
+  /* background: #f9e1d0; */
+  background: color-mix(in srgb, var(--default-color), transparent 96%);
+  padding: 30px;
+}
+
+.contact .info-item i {
+  color: orangered;
+  font-size: 20px;
+}
+
+.contact .info-item h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 20px 0 10px 0;
+}
+
+.contact .info-item p {
+  margin: 0;
+  line-height: 24px;
+  font-size: 14px;
+  padding: 0;
+}
+
+/* Forms */
+
+.contact .email-form {
+  background: color-mix(in srgb, var(--default-color), transparent 96%);
+  padding: 30px;
+  height: 100%;
+}
+
+/* para mudar os cantos, deixar quadrado, usa esse comando */
+
+.contact .email-form input[type=text], 
+.contact .email-form input[type=email],
+.contact .email-form textarea {
+  font-size: 14px;
+  border-radius: 0;
+  color: #060606;
+  background: #ffffff80;
+  border-color: #46464630;
+  box-shadow: none;
+}  
+
+.contact .email-form input[type=text]:focus, 
+.contact .email-form input[type=email]:focus,
+.contact .email-form textarea:focus {
+  border-color: orangered;
+}
+
+.contact .email-form input[type=text]::placeholder,
+.contact .email-form input[type=email]::placeholder,
+.contact .email-form textarea::placeholder {
+  color: #acacac9a
+}
+
+/* Subesrever estilo do Bootstrap */
+/* .contact .email-form button[type=submit]:hover
+background:
+border: none;
+color: */
+
+/* Cor do botão Enviar */
+.btn-custom {
+  background: #b95411;
+  color: rgb(225, 226, 226);
+  border: none;
+}
+
+.btn-custom:hover {
+  background-color: #e65c00;
+}
+
+
+
+
 /* scroll-top = Botão de voltar ao topo do site */
 
 .scroll-top {
@@ -1135,13 +1214,4 @@ margin-left:  8px;
   line-height: 0;
 }
 
-/* Cor do botão Enviar */
-.btn-custom {
-  background-color: #b95411;
-  color: rgb(225, 226, 226);
-  border: none;
-}
 
-.btn-custom:hover {
-  background-color: #e65c00;
-}
