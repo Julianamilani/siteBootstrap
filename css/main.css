@@ -1135,3 +1135,13 @@ margin-left:  8px;
   line-height: 0;
 }
 
+/* Cor do botão Enviar */
+.btn-custom {
+  background-color: #b95411;
+  color: rgb(225, 226, 226);
+  border: none;
+}
+
+.btn-custom:hover {
+  background-color: #e65c00;
+}
