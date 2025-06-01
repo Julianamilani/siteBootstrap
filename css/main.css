@@ -36,9 +36,9 @@ font-family: "Roboto", sans-serif;
 
 Global Color */
 :root { 
-  --background-color: #ffffff;
+  --background-color: #FFD3B6;
   /* Cor de fundo para todo o site, incluindo seções individuais */
-  --default-color: #444444;
+  --default-color: #100f0f;
   /* Cor padrão usada para a maioria do conteúdo de texto em todo o site */
   --heading-color: #394047;
   /* Cor para títulos, subtítulos e título em todo o site */
@@ -55,7 +55,7 @@ Global Color */
 :root {
   --nav-color: #ffffff;
   --nav-hover-color: #e87b2e;
-  --nav-mobile-background-color: #ffffff;
+  --nav-mobile-background-color: #FFD3B6;
   --nav-dropdown-background-color: #ffffff;
   --nav-dropdown-color: #444444;
 }
@@ -407,7 +407,7 @@ section,
 }
 
 .section-title div .description-title {
-  color: #b56515;
+  color: #f11370;
 }
 
 .dark-background {
@@ -948,7 +948,7 @@ margin-left:  8px;
 /* Feedback 1 */
 
 .feedbacks .feedback-item {
-  background-color: #ffffff;
+  background-color: #ffd3b6;
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
   padding: 30px;
   position: relative;
